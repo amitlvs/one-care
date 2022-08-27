@@ -1,0 +1,33 @@
+.logo {
+  font-size: 20px;
+}
+.seperator {
+  font-size: 20px;
+  padding: 0 5px;
+}
+mat-toolbar {
+  width: 100vw !important;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 300;
+}
+.oneCareLogo {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  width: 65%;
+  box-shadow: 3px 3px 3px #e78267;
+}
+.material-icons {
+  padding: 7px;
+}
+.sidenav-bg {
+  background-color: #ffa726;
+}
+.myButton {
+  background-color: #ffa726 !important;
+  color: white !important;
+}

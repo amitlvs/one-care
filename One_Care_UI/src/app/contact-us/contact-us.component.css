@@ -1,0 +1,20 @@
+.myButton {
+  background-color: #ffa726;
+  color: white;
+}
+mat-card {
+  width: 55% !important;
+  height: 74.8%;
+  /* position: relative; */
+  top: 20%;
+  left: 50%;
+  /* margin-right: -50%; */
+  transform: translate(-50%, 15%);
+  border: #ffa726 !important;
+  margin-bottom: 100px !important;
+  /* padding: 15px 30px !important; */
+}
+.mat-card:not([class*="mat-elevation-z"]) {
+  box-shadow: 4px 2px 20px 5px rgb(176 46 46 / 20%),
+    0px 1px 1px 0px rgb(50 33 33 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}

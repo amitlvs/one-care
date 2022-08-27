@@ -1,0 +1,77 @@
+<div class="mainContainer">
+    <div class="leftSection">
+        <img src="../../assets/undraw_medical_care_movn.svg" alt="" style="height: 70%;">
+        <!-- <img
+            src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/100/000000/external-world-online-medicine-wanicon-lineal-color-wanicon.png" /> -->
+    </div>
+
+    <div class="rightSection">
+        <div class="row">
+
+            <div class="mid">
+                <!-- <img
+                    src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/000000/external-healthcare-health-care-and-medical-flatart-icons-outline-flatarticons-2.png" /> -->
+                <img
+                    src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-life-activism-flaticons-flat-flat-icons-2.png" />
+                <h2 class="heading">Sign Up</h2>
+                <!-- <h2 class="heading"></h2> -->
+                <p class="para">Sign up to One Care</p>
+
+                <div>
+                    <form [formGroup]="signUpForm" (ngSubmit)="signUp()">
+                        <div class="example-container">
+                            <mat-form-field appearance="legacy">
+                                <mat-label>Enter your name</mat-label>
+                                <input matInput placeholder="Amit" formControlName="name" required>
+                                <small class="text-danger" *ngIf="name?.invalid && name?.touched">Name is Required
+                                </small>
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            </mat-form-field>
+                        </div>
+                        <div class="example-container">
+                            <mat-form-field appearance="legacy">
+                                <mat-label>Enter your email</mat-label>
+                                <input matInput placeholder="pat@example.com" formControlName="email" required
+                                    class="hola">
+                                <small class="text-danger" *ngIf="email?.invalid && email?.touched">Enter valid Email id
+                                </small>
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            </mat-form-field>
+                        </div>
+                        <div class="example-container">
+                            <mat-form-field appearance="legacy">
+                                <mat-label>Enter your contact</mat-label>
+                                <input matInput placeholder="9777729450" formControlName="contact" required>
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                                <small class="text-danger" *ngIf="contact?.invalid && contact?.touched">Enter valid
+                                    Contact Number
+                                </small>
+                            </mat-form-field>
+                        </div>
+
+                        <div class="example-container">
+                            <mat-form-field appearance="legacy">
+                                <mat-label>Enter your password</mat-label>
+                                <input matInput placeholder="Bullet@500" formControlName="password" required>
+                                <small class="text-danger" *ngIf="password?.invalid && password?.touched">Password
+                                    should be atleast 6 characters
+                                </small>
+                                <!-- <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error> -->
+                            </mat-form-field>
+                        </div>
+                        <!-- <mat-checkbox [formControl]="disabled" class="example-disabled-checkbox">
+                            Tooltip disabled
+                        </mat-checkbox> -->
+                        <input type="submit" name="" id="" value="SIGN UP" class="btn myButton" mat-raised-button
+                            aria-label="Button that displays a tooltip with a custom message"
+                            [disabled]="signUpForm.invalid">
+                        <!-- [matTooltip]="message.value" -->
+
+                        &nbsp;<span style="font-size: 12px;">Already have an account? </span> <a routerLink="/login">
+                            Login</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

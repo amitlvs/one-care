@@ -1,0 +1,26 @@
+.container {
+  height: 100% !important;
+}
+table {
+  width: 100%;
+  height: 65%;
+}
+
+.mat-form-field {
+  font-size: 10px;
+  width: 100%;
+}
+
+.mat-cell,
+.mat-footer-cell {
+  font-size: 12px !important;
+}
+.gender {
+  padding: 10px;
+}
+th.mat-header-cell:last-of-type,
+td.mat-cell:last-of-type,
+td.mat-footer-cell:last-of-type {
+  padding: 24px;
+  display: flex;
+}
