@@ -1,0 +1,25 @@
+.mainHome {
+  width: 100vw;
+  height: 100%;
+  flex: 1;
+  display: flex;
+}
+.left-home {
+  flex: 4;
+  /* background-color: rgb(126, 78, 16); */
+  background-image: url("../../assets/undraw_doctor_kw-5-l.svg");
+  background-size: cover;
+}
+.right-home {
+  margin-top: 50px;
+  flex: 2;
+  padding: 20px;
+  /* background-color: rgb(126, 78, 16); */
+}
+.myButton {
+  background-color: #ffa726 !important;
+  color: white !important;
+}
+.para {
+  padding: 0 30px;
+}

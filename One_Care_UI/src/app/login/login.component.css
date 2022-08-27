@@ -1,0 +1,52 @@
+.mainContainer {
+  width: 100%;
+  height: 78.5%;
+  display: flex;
+  flex: 1;
+}
+.leftSection {
+  /* background-color: aqua; */
+  flex: 2;
+}
+.mat-form-field {
+  width: 250px !important;
+}
+.rightSection {
+  flex: 2;
+  margin-top: 40px;
+  /*  background-color: blueviolet;
+  flex: 2;
+  height: calc(100vh-200px);*/
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  background-image: url("../../assets/undraw_authentication_re_svpt.svg");
+  width: 540px;
+  height: 70%;
+  overflow: hidden;
+}
+.mid {
+  position: fixed;
+  top: 40%;
+  left: 35%;
+  width: 50em;
+  height: 18em;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: -15em;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.myButton {
+  background-color: #ffa726;
+  color: white;
+}
+.para {
+  position: relative;
+  top: -14px;
+  left: 4px;
+  color: #8d9399;
+}
+.heading {
+  font-size: 32px;
+}

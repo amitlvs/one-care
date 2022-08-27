@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.myButton {
+  background-color: #ffa726;
+  color: white;
+}
+/* app-header {
+  height: 50px;
+}
+app-content-middle-section {
+  width: 50%;
+} */
+/* container-list {
+  overflow: auto;
+  height: 100%;
+} */
+/* 
+.container-list::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container-list::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background-color: black;
+}
+
+.container-list::-webkit-scrollbar-button,
+.container-list::-webkit-scrollbar-track,
+.container-list::-webkit-scrollbar-track-piece,
+.container-list::-webkit-scrollbar-corner,
+.container-list::-webkit-resizer {
+  display: none;
+} */

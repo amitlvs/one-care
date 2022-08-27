@@ -1,0 +1,72 @@
+<mat-toolbar style="background-color: #ffa726; color: white;" class="sticky">
+    <mat-toolbar-row fxLayoutAlign="space-between center">
+        <div fxLayout="row">
+            <button mat-button> <span class="logo" routerLink="home">One Care</span></button>
+            <div *ngIf="!deviceXs" fxLayoutAlign="space-between center">
+                <button mat-button routerLink="/home">Home</button>
+                <button mat-button routerLink="/about">About</button>
+                <button mat-button routerLink="/contactus">Contact Us</button>
+                <button mat-button routerLink="home/viewAppointment" *ngIf="headersLoader">Appointment</button>
+            </div>
+
+        </div>
+        <div>
+            <button *ngIf="!headersLoader" mat-button (click)="loggedIn()">Login</button>
+            <button *ngIf="!headersLoader" mat-button routerLink="/signup">Sign Up</button>
+            <button *ngIf="headersLoader" mat-button routerLink="/login" (click)="logout()">Logout</button>
+            <button *ngIf="!deviceXs" mat-icon-button>
+                <!-- <mat-icon routerLink="/profile">person</mat-icon> -->
+            </button>
+        </div>
+
+    </mat-toolbar-row>
+
+    <mat-toolbar-row *ngIf="deviceXs" fxLayoutAlign="space-between end">
+        <button mat-button routerLink="/home">Home</button>
+        <button mat-button routerLink="/about">About</button>
+        <button mat-button routerLink="/contactus">Contact Us</button>
+
+    </mat-toolbar-row>
+</mat-toolbar>
+<!-- <mat-sidenav-container>
+    <mat-sidenav #sidenav mode="over">
+        <img src="https://www.onecareme.com/wp-content/uploads/OneCare-Logo1.png" alt="One Care" class="oneCareLogo">
+        <mat-nav-list>
+            <a mat-list-item routerLink="/dashboard">
+                <span class="material-icons">
+                    space_dashboard
+                </span>Dashboard
+            </a>
+             <ng-md-icon icon="send" style="fill: orange"></ng-md-icon>  
+            <a mat-list-item routerLink="/admin" (click)="admin()">
+                <span class="material-icons">
+                    admin_panel_settings
+                </span> Admin</a>
+            <a mat-list-item routerLink="/doctor" (click)="doctor()">
+                <span class="material-icons">
+                    medication
+                </span>Doctor</a>
+            <a mat-list-item routerLink="/patient" (click)="patient()">
+                <span class="material-icons">
+                    settings_accessibility
+                </span> Patient</a>
+            <a mat-list-item routerLink="/appointment" (click)="appointment()">
+                <span class="material-icons">
+                    book_online
+                </span> Appointment</a>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div>
+            <img src="../../assets/undraw_doctors_hwty.svg" alt="docs images" style="width: 57.5%; margin-left: 250px;"
+                *ngIf="imageLoader">
+            <app-admin></app-admin>
+            <app-admin *ngIf="adminName == 'admin'"></app-admin>
+            <app-patient *ngIf="adminName == 'patient'"></app-patient>
+            <app-doctor *ngIf="adminName == 'doctor'"></app-doctor>
+            <app-appointment *ngIf="adminName == 'appointment'"></app-appointment>
+            <app-login *ngIf="adminName == 'login'"></app-login>
+            <app-sign-up *ngIf="adminName == 'signup'"></app-sign-up>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container> -->

@@ -1,0 +1,47 @@
+.mainContainer {
+  width: 100%;
+  height: 78.5%;
+  display: flex;
+  flex: 1;
+}
+.leftSection {
+  /* background-color: aqua; */
+  padding-top: 150px;
+  padding-left: 100px;
+  flex: 2;
+}
+.rightSection {
+  /* background-color: blueviolet; */
+  flex: 4;
+}
+.mid {
+  position: fixed;
+  top: 32%;
+  left: 40%;
+  width: 50em;
+  height: 18em;
+  margin-top: -9em; /*set to a negative number 1/2 of your height*/
+  margin-left: 15em;
+}
+.example-container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.mat-form-field {
+  width: 260px !important;
+}
+.myButton {
+  background-color: #ffa726;
+  color: white;
+}
+.para {
+  position: relative;
+  top: -14px;
+  color: #8d9399;
+  margin-bottom: -12px;
+}
+.heading {
+  font-size: 32px;
+}
+/* .example-disabled-checkbox {
+    margin-left: 8px;
+  } */
